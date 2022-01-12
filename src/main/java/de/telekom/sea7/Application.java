@@ -3,7 +3,7 @@ package de.telekom.sea7;
 public class Application extends BaseObject {
 	
 	public Application(int id, Object parent) {
-		super(id,parent);
+		super(id,parent); // Aufruf des Konstruktors der übergeordneten Klasse
 	}
 	
 	public void run(String[] args) {
