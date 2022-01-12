@@ -1,20 +1,16 @@
 package de.telekom.sea7;
 
 public class BaseObject {
-	private String objectInstance;
+	private int id;
+	private Object parent;
 	
-	public BaseObject(int id) {
+	public BaseObject(int id, Object parent) {
 		this.id = id;
-		//this.objectInstance = super.toString();
+		this.parent = parent;
 	}
 	
 	public String objectToString() {
-		//System.out.println(toString());
 		return super.toString();
-	}
-	
-	public String getObjectInstance() {
-		return objectInstance;
 	}
 
 	public int getId() {
@@ -24,10 +20,8 @@ public class BaseObject {
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	private int id;
 	
-	//public String toString() {
-	//	return super.toString();
-	//}
+	public Object getParent() {
+		return parent;
+	}
 }

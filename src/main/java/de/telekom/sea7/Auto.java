@@ -4,13 +4,11 @@ public class Auto extends BaseObject {
 	
 	private String baseInstance;
 
-	public Auto(int id) {
-		super(id); // Aufruf des Constructors von BaseObject
-		//this.baseInstance = getObjectInstance() + ", " + super.toString();
+	public Auto(int id, Object parent) {
+		super(id, parent); // Aufruf des Constructors von BaseObject
 	}
 	
 	public String getBaseToString() {
-		//System.out.println(super.toString());
 		return super.objectToString() + ", " + super.toString();
 	}
 	
